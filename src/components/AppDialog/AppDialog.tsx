@@ -7,7 +7,7 @@ interface AppDialogProps {
 }
 
 const AppDialog = ({ trigger }: AppDialogProps) => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
     return (
         <Dialog.Root open={open} onOpenChange={setOpen}>
             {trigger && <Dialog.Trigger>{trigger}</Dialog.Trigger>}
